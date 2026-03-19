@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Name | Academic Homepage</title>
+    <!-- Bootstrap 5 + Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Segoe UI', system-ui, sans-serif; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/1080'); background-size: cover; color: white; }
+        .section { padding: 60px 0; }
+        .nav-link { font-weight: 500; }
+        .profile-img { width: 180px; height: 180px; object-fit: cover; border: 4px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Your Name</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero py-5 text-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <!-- Replace with your photo (upload profile.jpg to your repo) -->
+                <img src="profile.jpg" alt="Your Name" class="profile-img rounded-circle mx-auto">
+            </div>
+            <div class="col-md-8">
+                <h1 class="display-4 fw-bold">Your Full Name</h1>
+                <h4 class="mb-3">Assistant Professor / PhD Candidate / Postdoc • Department of XXX • University of XXX</h4>
+                <p class="lead mb-4">Hong Kong / Your City • ORCID: 0000-0000-0000-0000</p>
+                <a href="files/cv.pdf" class="btn btn-light btn-lg" target="_blank">
+                    <i class="bi bi-download"></i> Download CV
+                </a>
+                <a href="https://scholar.google.com/citations?user=yourid" class="btn btn-outline-light btn-lg ms-3" target="_blank">
+                    <i class="bi bi-google"></i> Google Scholar
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- About -->
+<section id="about" class="section bg-light">
+    <div class="container">
+        <h2 class="mb-4 text-center">About Me</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <p class="lead text-center">
+                    Write a short professional bio here (2–4 paragraphs). 
+                    Mention your research focus, current position, previous affiliations, and any awards.
+                </p>
+                <p class="text-center">
+                    Example: I am a researcher in [field] at [university]. My work focuses on ...
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Research Interests -->
+<section id="research" class="section">
+    <div class="container">
+        <h2 class="mb-4 text-center">Research Interests</h2>
+        <div class="row g-4 text-center">
+            <div class="col-md-4"><div class="card h-100"><div class="card-body"><h5>AI & Machine Learning</h5></div></div></div>
+            <div class="col-md-4"><div class="card h-100"><div class="card-body"><h5>Computer Vision</h5></div></div></div>
+            <div class="col-md-4"><div class="card h-100"><div class="card-body"><h5>Quantum Computing</h5></div></div></div>
+            <!-- Add more cards or just edit the text above -->
+        </div>
+    </div>
+</section>
+
+<!-- Publications -->
+<section id="publications" class="section bg-light">
+    <div class="container">
+        <h2 class="mb-4 text-center">Selected Publications</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <strong>Paper Title 1</strong><br>
+                        Your Name, Co-author1, Co-author2. <em>Journal Name, 2025</em>.<br>
+                        <a href="https://doi.org/..." target="_blank">DOI</a> | 
+                        <a href="files/paper1.pdf" target="_blank">PDF</a>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Paper Title 2</strong><br>
+                        Your Name et al. <em>Conference Name, 2024</em>.<br>
+                        <a href="#">arXiv</a> | <a href="#">PDF</a>
+                    </li>
+                    <!-- Duplicate the <li> above and edit for each paper -->
+                </ul>
+                <p class="text-center mt-4">
+                    <a href="https://scholar.google.com/citations?user=yourid" target="_blank" class="btn btn-primary">
+                        View all publications on Google Scholar →
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Teaching / Experience -->
+<section id="teaching" class="section">
+    <div class="container">
+        <h2 class="mb-4 text-center">Teaching & Experience</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Course Name (2024–2025)</h5>
+                        <p class="text-muted">Undergraduate / Graduate • Your University</p>
+                        <p>Short description of the course you taught or are teaching.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more cards -->
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section bg-light">
+    <div class="container">
+        <h2 class="mb-4 text-center">Contact</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+                <p><i class="bi bi-envelope"></i> <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
+                <p><i class="bi bi-geo-alt"></i> Room XXX, Building Y, University of XXX, Hong Kong</p>
+                <p class="mt-4">
+                    <a href="https://twitter.com/yourhandle" class="me-3"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://linkedin.com/in/yourprofile" class="me-3"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/yourusername"><i class="bi bi-github"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4 text-center">
+    <div class="container">
+        <p>© 2026 Your Name. Built with ❤️ for academia.</p>
+        <p><small>Hosted on GitHub Pages • <a href="https://github.com/yourusername/yourusername.github.io" class="text-white">View source on GitHub</a></small></p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
